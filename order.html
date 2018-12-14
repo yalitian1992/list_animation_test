@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>确认订单</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+  <meta http-equiv="X-UA-Compitable" content="IE=edge">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="payBox">
+  <div class="header">
+    <img src="images/icon-Arrow.png" alt="">
+    <p>确认订单</p>
+  </div>
+  <div class="pay-main">
+    <!--<div class="main-top">
+      <div class="main-Tleft">
+        <h4 class="f-size">收货信息</h4>
+        <p>王良<span class="phone">18954521454</span></p>
+        <p class="address">北京市海淀区 奥北科技园20号楼奥北科技园20号楼</p>
+      </div>
+      <a href="javascript:void(0);">
+        &lt;!&ndash;<span>更换号码</span>&ndash;&gt;
+        <img src="images/icon-r.png" alt="">
+      </a>
+    </div>-->
+    <!--支付方式-->
+    <div class="Rec-box Rec-mode">
+      <p class="f-size">付款方式</p>
+      <ul class="Rec-mode-list">
+        <li class="mode-list-box Rec-alipay">
+          <div class="fl"></div>
+          <div class="fc">
+            <p>支付宝支付</p>
+          </div>
+          <div class="mt">
+            <span>立减2%</span>
+          </div>
+          <div class="fr"><span class="opt"></span></div>
+        </li>
+        <li class="mode-list-box Rec-wechat" value="1">
+          <div class="fl"></div>
+          <div class="fc">
+            <p>paypal</p>
+          </div>
+          <div class="mt">
+            <span>立减2%</span>
+          </div>
+          <div class="fr"><span class="opt selected"></span></div>
+        </li>
+        <!--<li class="mode-list-box Rec-card">
+          <div class="fl"></div>
+          <div class="fc">
+            <p>招行一网通</p>
+          </div>
+          <div class="mt">
+            <span>立减2%</span>
+          </div>
+          <div class="fr"><span class="opt"></span></div>
+        </li>
+        <li class="mode-list-box Rec-topay">
+          <div class="fl"></div>
+          <div class="fc">
+            <p>货到付款</p>
+          </div>
+          <div class="mt">
+            <span>立减2%</span>
+          </div>
+          <div class="fr"><span class="opt"></span></div>
+        </li>-->
+        <!--优惠券-->
+        <li class="mode-list-box Rec-topay no-border">
+          <div class="OrderInfo" style="width:100%;margin-left:0px;">
+            <div class="Order-left">
+              <img src="images/pro.jpg" alt="">
+            </div>
+            <div class="Order-center order-minus">
+              <div>
+                <p><span class="color-black">优众网优惠券 商品满10000<br/>立减700</span></p>
+                <p>
+                  <span class="color-orange">送<i>35789</i>优众积分</span>
+                </p>
+                <p class="color-purple">￥<span>1450</span></p>
+              </div>
+            </div>
+            <!--<div class="Order-right">
+              ￥<span>1450</span>
+            </div>-->
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!--订单信息-->
+    <!--<div class="main-center-box">
+      <div class="main-center">
+        <div class="OrderInfo">
+          <div class="Order-left">
+            <img src="images/pro.jpg" alt="">
+          </div>
+          <span class="buy-icon bg-purple">专属</span>
+          <div class="Order-center">
+            <p><span class="color-black">Parda</span>优众优惠券优众优惠券优众优惠券优众优惠券优众优惠券</p>
+            <p>
+              <span><i>S</i><span class="part-line">|</span><i>绿色</i></span>
+            </p>
+            <p>不可使用折扣</p>
+          </div>
+          <div class="Order-right">
+            ￥<span>1450</span>
+          </div>
+        </div>
+      </div>
+      <div class="main-center">
+        <div class="OrderInfo">
+          <div class="Order-left">
+            <img src="images/pro.jpg" alt="">
+          </div>
+          <span class="buy-icon bg-black">售完</span>
+          <div class="Order-center">
+            <p><span class="color-black">Parda</span>优众优惠券优众优惠券优众优惠券优众优惠券优众优惠券</p>
+            <p>
+              <span><i>S</i><span class="part-line">|</span><i>绿色</i></span>
+            </p>
+            <p>不可使用折扣</p>
+          </div>
+          <div class="Order-right">
+            ￥<span>1450</span>
+          </div>
+        </div>
+      </div>
+    </div>-->
+
+  </div>
+  <!--结算-->
+  <div class="account-box pay_btn">
+    <div class="account-left">
+      <!--<div>
+        <p class="total color-purple">￥500</p>
+        <p class="extra"><span class="color-black">货到付款</span><span class="giveMoney color-purple">（免运费）</span></p>
+      </div>-->
+    </div>
+    <button class="account-btn">结算</button>
+  </div>
+  <!--底部支付-->
+  <!--<div class="pay-bottomBox">
+    <div class="pay-bottom">
+      <p>总额：￥<span>2310000000</span></p>
+      <button>立即支付</button>
+    </div>
+  </div>-->
+  <!--支付浮层-->
+  <div class="layerBox display">
+    <div class="layerback">
+      <div class="layer">
+        <p>是否已完成支付</p>
+        <div class="btn">
+          <button>支付遇到问题</button>
+          <button>完成支付</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--支付状态-->
+<div class="BuyRecord-box PayStatus-box hiDe" id="Success">
+  <div class="header">
+    <p>支付成功</p>
+  </div>
+  <div class="PayStatus-mainBox">
+    <!--支付成功-->
+    <div class="PayStatus-Success">
+      <div class="successBox">
+        <img src="images/icon-success.png">
+        <p>您已成功支付<span class="font-pink">￥230000</span></p>
+        <a href="/pro-list.html">回到首页</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="BuyRecord-box PayStatus-box hiDe" id="Fail">
+  <div class="header">
+    <p>支付失败</p>
+  </div>
+  <div class="PayStatus-mainBox">
+    <!--支付失败-->
+    <div class="PayStatus-Failure">
+      <img src="images/icon-failure.png">
+      <p>您支付订单失败</p>
+      <p>请查看支付账单和相关数据</p>
+      <div>
+        <a href="/pro-list.html" class="bg-red">稍后再说</a>
+        <a href="javascript:void(0);" class="bg-red pay_btn">重新充值</a>
+      </div>
+      <p class="Pay-query" ><span>客服咨询电话：</span><a href="tel:400-400-400">400-881-6609</a></p>
+    </div>
+  </div>
+</div>
+
+
+</body>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/rem.js"></script>
+<script>
+//  地址栏获取参数
+  function GetQueryString(name){
+    var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+    var r = window.location.search.substr(1).match(reg);
+    if(r!=null)return  unescape(r[2]); return null;
+  }
+
+  var Price = 0,strPrice='';
+
+if(GetQueryString('paymentId')){
+  Price = GetQueryString('price');
+  strPrice = '<div><p class="total color-purple">￥'+Price+'</p><p class="extra"><!-- <span class="color-black">货到付款</span> --><span class="giveMoney color-purple">（免运费）</span></p></div>'
+  $(".account-left").html(strPrice);
+
+  $.ajax({
+    type : "POST",
+    url : "/api/auction/voucher_trades/execute",
+    headers: {
+      token: "cf5e918ce1395384a62ec5be372860777f489982"
+    },
+    data: {
+      paymentId: GetQueryString('paymentId'),
+      token: GetQueryString('token'),
+      PayerID: GetQueryString('PayerID')
+    },
+    success: function(data){
+      if(data.status == 200){
+        $('#Success').removeClass("hiDe");
+        $('.account-box').addClass("hiDe")
+      }else{
+        $('#Fail').removeClass("hiDe");
+        $('.account-box').addClass("hiDe")
+      }
+    }
+  })
+}else{
+  $.ajax({
+    url:'/api/auction/voucher_trades',
+    headers: {
+      token: "cf5e918ce1395384a62ec5be372860777f489982",
+    },
+    type: 'POST',
+    data:{
+      voucher_trade:{
+        event_id: GetQueryString('eventId'),
+        amount: GetQueryString('amount')
+      }
+    },
+    success:function(data){
+
+      var listOrder = data.data,strO='',strPriSuccess='';
+      var micro = listOrder.event.micro_amount;
+      Price = listOrder.voucher_trade.payment_price;
+
+      if(micro >=100000 ){
+        micro = (micro/10000).toFixed(1) + '万'
+      }
+      strO = '<div><p><span class="color-black">优众网优惠券 商品满'+listOrder.event.limitation+'<br/>立减'+listOrder.event.amount+'</span></p><p><span class="color-orange">送<i>'+micro+'</i>优众积分</span></p><p class="color-purple">￥<span>'+listOrder.event.amount+'</span></p></div>'
+      $(".order-minus").html(strO);
+
+      strPrice = '<div><p class="total color-purple">￥'+Price+'</p><p class="extra"><!-- <span class="color-black">货到付款</span> --><span class="giveMoney color-purple">（免运费）</span></p></div>'
+      $(".account-left").html(strPrice);
+
+      strPriSuccess = '<img src="images/icon-success.png"><p>您已成功支付<span class="font-pink">￥'+listOrder.voucher_trade.payment_price+'</span></p><a href="/pro-list.html">回到首页</a>'
+      $('.successBox').html(strPriSuccess);
+
+
+//      结算
+      $('.pay_btn').on('click',function(){
+        console.log(Price);
+
+        var payment_service = '';
+//        判断支付方式
+        if($('.Rec-alipay .fr span').hasClass('selected')){
+          payment_service = 'alipay';
+        }else{
+          if($('.Rec-wechat .fr span').hasClass('selected')){
+            payment_service = 'paypal';
+          }
+        }
+        $.ajax({
+          type : "POST",
+          url : "/api/auction/voucher_trades/checkout",
+          headers: {
+            token: "cf5e918ce1395384a62ec5be372860777f489982"
+          },
+          data: {
+            id: 88,
+            payment_service: payment_service,
+            return_url: 'http://localhost:9100/order.html?price='+ Price
+          },
+          success : function(data) {
+            window.location.href = data.data.pay_url;
+          }
+        });
+      })
+    }
+  })
+}
+
+  $(function(){
+    /*支付方式勾选*/
+    $(".Rec-mode-list li").on("click",function(){
+      var Opt = $(this).find(".opt");
+      Opt.toggleClass("selected");
+      if(Opt.hasClass("selected")){
+        $(this).attr("value","1").siblings().attr("value","0");
+      }else{
+        $(this).attr("value","0");
+      }
+      $(".Rec-mode-list li[value='0']").find(".opt").removeClass("selected");
+    })
+    $('body').on('click', '.layerBox', function(event) {
+      $(this).hide();
+    });
+    $('body').on('click', '.layer,.btn button', function(event) {
+      event.stopPropagation();
+    });
+  })
+</script>
+</html>

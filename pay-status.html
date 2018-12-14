@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>支付结果</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+  <meta http-equiv="X-UA-Compitable" content="IE=edge">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="BuyRecord-box PayStatus-box">
+  <div class="header">
+     <p>支付成功</p>
+    <!--<p>支付失败</p>-->
+  </div>
+  <div class="PayStatus-mainBox">
+    <!--支付成功-->
+     <div class="PayStatus-Success">
+       <div class="successBox">
+         <img src="images/icon-success.png">
+         <p>您已成功支付<span class="font-pink">￥230000</span></p>
+         <a href="/pro-list.html">回到首页</a>
+       </div>
+    </div>
+    <!--支付失败-->
+    <!--<div class="PayStatus-Failure">
+      <img src="images/icon-failure.png">
+      <p>您使用招商银行支付订单失败</p>
+      <p>请查看支付账单和相关数据</p>   
+      <div>
+        <a href="/pro-list.html" class="bg-red">稍后再说</a>
+        <a href="javascript:void(0);" class="bg-red" id="pay_btn">重新充值</a>
+      </div>
+      <p class="Pay-query" ><span>客服咨询电话：</span><a href="tel:400-400-400">400-881-6609</a></p>
+    </div>-->
+  </div>
+</div>
+</body>
+</html>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/rem.js"></script>
+<script>
+  //  地址栏获取参数
+  function GetQueryString(name){
+    var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+    var r = window.location.search.substr(1).match(reg);
+    if(r!=null)return  unescape(r[2]); return null;
+  }
+
+
+
+
+  $('#pay_btn').on('click',function(){
+    $.ajax({
+      url:'/api/auction/voucher_trades',
+      headers: {
+        token: "cf5e918ce1395384a62ec5be372860777f489982",
+      },
+      type: 'POST',
+      data:{
+        voucher_trade:{
+          event_id: GetQueryString('eventId'),
+          amount: GetQueryString('amount')
+        }
+      },
+      success: function(result){
+        window.location.href = result.data.pay_url
+      }
+    })
+  })
+
+  $('.backP').on('click',function(){
+//    window.location.href = window.location.href.replace(/pay-status/,'pro-list')
+  })
+
+
+
+
+</script>
